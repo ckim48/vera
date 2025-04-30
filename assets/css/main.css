@@ -190,7 +190,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: #BDDBFF;
+  --background-color: white;
 }
 
 @media (max-width: 800px) {
@@ -259,7 +259,7 @@ h6 {
     height: 2px;
     bottom: -6px;
     left: 0;
-    background-color: var(--nav-hover-color);
+    background-color:#22C55E ;
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
