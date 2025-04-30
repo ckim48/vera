@@ -8,7 +8,7 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
-  --background-color: #313131; /* Deep dark background */
+  --background-color: #BDDBFF; /* Deep dark background */
   --default-color: #f5f5f5; /* Light grayish text for contrast */
   --heading-color: #ffffff; /* Bright white for headings */
   --accent-color: #dfdfdf; /* Bright greenish-teal for CTA & active states */
@@ -190,9 +190,16 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: #424242;
+  --background-color: #BDDBFF;
 }
 
+@media (max-width: 800px) {
+#abc{
+  margin: 0 auto;
+}
+
+
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -783,7 +790,7 @@ section,
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: var(--accent-color);
+  background: #22C55E;
   margin: 4px 10px;
 }
 
@@ -820,7 +827,7 @@ section,
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: black;
+  background: #22C55E;
   margin: 4px 10px;
 }
 
@@ -1106,7 +1113,7 @@ section,
 }
 
 .about .content .read-more {
-  background: var(--accent-color);
+  background: #22C55E;
   color: black;
   font-family: var(--heading-font);
   font-weight: 500;
@@ -1302,6 +1309,7 @@ section,
 }
 
 .details .features-item ul {
+  color:black !important;;
   list-style: none;
   padding: 0;
 }
@@ -1319,7 +1327,7 @@ section,
 .details .features-item ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: var(--accent-color);
+  color:#22C55E  !important;;
 }
 
 .details .features-item p:last-child {
