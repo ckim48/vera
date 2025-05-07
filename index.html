@@ -35,7 +35,27 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+<style>
+#overview .section-title3 {
+  margin-bottom: 40px;
+  padding-top: 20px;
+}
 
+#overview .section-title3 h2 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+
+}
+
+#overview .section-title3 p {
+  font-size: 1rem;
+  color: #6c757d;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+</style>
 
 </head>
 
@@ -82,9 +102,9 @@
           <p style="color:black;">Vera empowers a generation to redefine fashion through mindful actions...</p>
           <div class="d-flex">
             <a href="#about" class="btn-get-started" style="background-color: #22C55E;">Start Your Journey</a>
-<!--             <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center">
+            <a href="https://www.youtube.com/watch?v=Ew7OFSrWWo4" class="glightbox btn-watch-video d-flex align-items-center" style="background-color: white; color:black;">
               <i class="bi bi-play-circle"></i><span>Watch Video</span>
-            </a> -->
+            </a>
           </div>
         </div>
 
@@ -219,6 +239,21 @@
   </div>
 </section><!-- /Details Section -->
 
+<!-- App Overview Section -->
+<section id="overview" class="section">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title3 text-center">
+      <h2 style="color:black;">App Overview</h2>
+      <p class="text-muted">Discover how VERA works through this short video walkthrough.</p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+<iframe class="d-block mx-auto" width="560" height="315" src="https://www.youtube.com/embed/Ew7OFSrWWo4?si=_2YpfamwpP-z0bjJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
@@ -263,9 +298,49 @@
       </div>
 
     </section>
+
+
+<div class="section-divider">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path d="M0,64L48,58.7C96,53,192,43,288,69.3C384,96,480,160,576,186.7C672,213,768,203,864,181.3C960,160,1056,128,1152,122.7C1248,117,1344,139,1392,149.3L1440,160V0H0Z" fill="#ffffff"></path>
+  </svg>
+</div>
+    <!-- Contact Us Section -->
+<section id="contact" class="section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2 style="color:black;">Contact Us</h2>
+    <div style="color:black;">Collaboration with <span class="description-title">VERA</span></div>
+  </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card shadow-sm border-0 p-4" data-aos="fade-up">
+          <form id="contact-form">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+              <label for="email">Your Email</label>
+            </div>
+            <div class="form-floating mb-4">
+              <textarea class="form-control" placeholder="Your Message" id="message" style="height: 150px;" required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn" style="background-color: #22C55E; color: white;">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
   </main>
 
-  <footer id="footer" class="footer" style="color:black;">
+  <footer id="footer" class="footer" style="color:black; background-color: white;">
 
 
     <div class="container copyright text-center">
@@ -322,8 +397,26 @@
     spacing: 15.0
   });
 </script>
-
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("27QgP0uQsaxgso0ls");
+  })();
 </script>
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm('service_rglla1a', 'template_19ra51l', this)
+    .then(() => {
+      alert("Message sent successfully!");
+      this.reset();
+    }, (error) => {
+      alert("Failed to send message: " + JSON.stringify(error));
+    });
+});
+</script>
+
 
 </body>
 
