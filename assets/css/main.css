@@ -866,13 +866,13 @@ section,
 .hero {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 120px 0;
   display: flex;
   align-items: center;
   overflow: hidden;
   background-color: transparent;
-  z-index: 0; /* <- Add this to establish stacking context */
+  z-index: 0;
 }
 
 
@@ -1005,7 +1005,18 @@ color: white !important;
 
   .hero .btn-get-started,
   .hero .btn-watch-video {
-    font-size: 13px;
+    font-size: 12px;
+  }
+  .bi-play-circle{
+    display:none;
+  }
+    .hero-image-overlap {
+     display: none;
+  }
+  }
+
+  .phone {
+    display: none;
   }
 }
 
