@@ -996,7 +996,9 @@ color: white !important;
     font-size: 28px;
     line-height: 36px;
   }
-
+.hero .btn-watch-video {
+margin-left: 0px;
+}
   .hero p {
     font-size: 18px;
     line-height: 24px;
