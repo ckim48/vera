@@ -866,13 +866,14 @@ section,
 .hero {
   position: relative;
   width: 100%;
-  min-height: 80vh;
-  padding: 120px 0;
+  min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center; 
   overflow: hidden;
   background-color: transparent;
   z-index: 0;
+  padding: 0; 
 }
 
 
@@ -881,8 +882,8 @@ section,
 
 .hero .container {
   position: relative;
-  margin-top: 140px;
-  z-index: 4; /* Above ::before and Vanta */
+  z-index: 4; 
+  margin-top: 120px;
 }
 
 
@@ -992,6 +993,12 @@ color: white !important;
 }
 
 @media (max-width: 640px) {
+  .hero {
+    min-height: 80vh;
+  }
+  .hero .container{
+    margin-top: 200px;
+  }
   .hero h1 {
     font-size: 28px;
     line-height: 36px;
@@ -1015,11 +1022,12 @@ margin-left: 0px;
     .hero-image-overlap {
      display: none;
   }
-  }
-
-  .phone {
+    .phones {
     display: none;
   }
+  }
+
+
 }
 
 .hero .hero-waves {
