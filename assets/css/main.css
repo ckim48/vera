@@ -992,6 +992,19 @@ color: white !important;
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+@media (max-width: 1050px) {
+  .hero {
+    min-height: 80vh;
+  }
+  .hero .container{
+    margin-top: 200px;
+  }
+
+    .phones {
+    display: none;
+  }
+}
+
 @media (max-width: 640px) {
   .hero {
     min-height: 80vh;
