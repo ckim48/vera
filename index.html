@@ -55,6 +55,25 @@
   margin: 0 auto;
 }
 
+#insights .section-title3 {
+  margin-bottom: 40px;
+  padding-top: 20px;
+}
+
+#insights .section-title3 h2 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+
+}
+
+#insights .section-title3 p {
+  font-size: 1rem;
+  color: #6c757d;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 </style>
 
 </head>
@@ -70,7 +89,7 @@
         <h1 style="color:black" class="sitename">Vera</h1>
       </a>
 
-      <nav id="navmenu" class="navmenu" >
+      <nav id="navmenu" class="navmenu ms-md-5" >
         <ul style="color:black">
           <li><a href="#hero" class="active" style="color:black">Home</a></li>
           <li><a href="#about" style="color:black">About</a></li>
@@ -263,6 +282,30 @@
 
   </div>
 </section><!-- /Details Section -->
+<section id="insights" class="section" style="background: linear-gradient(90deg, #ffffff,#eefbfc)"; >
+  <div class="container" data-aos="fade-up">
+    <div class="section-title3 text-center">
+      <h2 style="color:black;">Strategic Insights</h2>
+      <p class="text-muted">Explore the core thinking and planning that shaped our app—from user needs to business growth strategy.</p>
+      <button type="button" class="btn px-3 py-2 mt-3 rounded-5" style="background-color: #22C55E; color: white;" data-bs-toggle="modal" data-bs-target="#pdfModal">
+        <i class="bi bi-file-earmark-richtext"></i> View Business Report
+      </button>
+    </div>
+  </div>
+</section>
+<div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="pdfModalLabel">Business Report</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 80vh;">
+        <iframe src="assets/report.pdf" width="100%" height="100%" style="border: none;"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- App Overview Section -->
 <section id="overview" class="section">
